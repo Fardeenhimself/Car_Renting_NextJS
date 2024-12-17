@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import HomeLayout from "../../layouts/home";
 import { useRouter } from 'next/router';
-import carList from '../../data/carlist';
+import carList from '../../data/carList.json';
 import Link from 'next/link';
 
 
