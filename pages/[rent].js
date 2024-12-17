@@ -5,25 +5,32 @@ import "react-toastify/dist/ReactToastify.css";
 import HomeLayout from "../layouts/home";
 
 export default function Rent() {
-  const router = useRouter();
   const [user, setUser] = useState({});
-  const car = useRouter().query.rent;
   const [auth, setAuth] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
+  const car = router.query.rent;
 
   useEffect(() => {
+    setIsClient(true); // Mark that the component has mounted on the client side
+
     const val = JSON.parse(sessionStorage.getItem("usr"));
     if (val) {
       setAuth(true);
       setUser(val);
     }
-  }, [auth]);
+  }, []);
 
   const subFun = () => {
-    (() => toast("THANK YOU 😄", { theme: "light", autoClose: 1000 }))();
+    toast("THANK YOU 😄", { theme: "light", autoClose: 1000 });
     setTimeout(() => {
       router.push("/");
     }, 2000);
   };
+
+  if (!isClient) {
+    return null; // Return nothing until the component is mounted
+  }
 
   if (auth) {
     return (
@@ -76,15 +83,15 @@ export default function Rent() {
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label
-                    htmlFor="email"
+                    htmlFor="car"
                     className="leading-7 text-sm text-gray-600"
                   >
                     Car
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
+                    type="text"
+                    id="car"
+                    name="car"
                     value={car}
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-600 focus:bg-white focus:ring-2 focus:ring-yellow-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     disabled
@@ -101,7 +108,7 @@ export default function Rent() {
               </div>
               <div className="p-2 w-full flex items-center">
                 <p className=" mx-auto text-black font-thin text-lg">
-                  By clicking submit, you agree with our terms and conditions !
+                  By clicking submit, you agree with our terms and conditions!
                 </p>
               </div>
             </div>
@@ -111,12 +118,7 @@ export default function Rent() {
     );
   } else {
     router.push("/sign");
-    // return (
-    //   <>
-    //     <h1 className="font-black text-9xl text-center">404</h1>
-    //     <h1 className="font-black text-9xl text-center">NOT FOUND !</h1>
-    //   </>
-    // );
+    return null; // Optionally, you can add a loading spinner here while redirecting
   }
 }
 
