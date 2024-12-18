@@ -26,10 +26,10 @@ const Features = () => {
                   className="aspect-[16/10] md:aspect-auto object-cover"
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-                  <p className="text-white  text-7xl font-bold">AVENTADOR S</p>
+                  <p className="text-white   text-base sm:text-7xl font-bold">AVENTADOR S</p>
                 </div>
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-end justify-center">
-                  <p className="text-white  text-3xl font-bold">
+                  <p className="text-white  text-sm  sm:text-3xl font-bold">
                     Experience the powerful V12 Aventador S by Lamborghini.{" "}
                   </p>
                 </div>
@@ -42,10 +42,10 @@ const Features = () => {
                   className="aspect-[16/10] md:aspect-auto object-cover"
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-                  <p className="text-white text-7xl font-bold">AVENTADOR S</p>
+                  <p className="text-white text-base sm:text-7xl font-bold">AVENTADOR S</p>
                 </div>
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-end justify-center">
-                  <p className="text-white  text-3xl font-bold">
+                  <p className="text-white  text-sm  sm:text-3xl font-bold">
                     Experience the powerful V12 Aventador S by Lamborghini.{" "}
                   </p>
                 </div>
@@ -58,10 +58,10 @@ const Features = () => {
                   className="aspect-[16/10] md:aspect-auto object-cover"
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-                  <p className="text-white text-7xl font-bold">AVENTADOR S</p>
+                  <p className="text-white text-base sm:text-7xl font-bold">AVENTADOR S</p>
                 </div>
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-end justify-center">
-                  <p className="text-white  text-3xl font-bold">
+                  <p className="text-white  text-sm  sm:text-3xl font-bold">
                     Experience the powerful V12 Aventador S by Lamborghini.{" "}
                   </p>
                 </div>

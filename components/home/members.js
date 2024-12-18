@@ -17,17 +17,17 @@ const Members = () => {
                 <div className="h-full flex flex-col items-center text-center">
                   <img
                     alt="team"
-                    className="flex-shrink-0 rounded-lg w-48 h-48 object-center mb-4"
+                    className="flex-shrink-0 rounded-lg w-32 h-32 object-center mb-4"
                     src={data?.image}
                   />
                   <div className="flex-grow">
-                    <h2 className="title-font font-bold text-2xl text-gray-900">
+                    <h2 className="title-font font-bold text-xl text-gray-900">
                       {data?.name}
                     </h2>
-                    <h3 className="text-gray-500 font-semibold mb-3">
+                    <h3 className="text-gray-500 font-semibold mb-2 text-sm">
                       {data?.sub}
                     </h3>
-                    <p className="mb-4">{data?.desc}</p>
+                    <p className="mb-2 text-sm">{data?.desc}</p>
                     <span className="inline-flex">
                       <a className="text-gray-500">
                         <svg

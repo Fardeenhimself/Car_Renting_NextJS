@@ -5,10 +5,10 @@ const Footer = () => {
                 <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                            <img src="/images/logo.png" alt="" className="h-[100px] w-[125px]" />
+                            <img src="/images/vehicle.png" alt="logo" className="h-[100px] w-[100px]" />
                         </a>
-                        <p className="mt-2 text-sm ">AUTOMOBILIE LAMBORGHINI</p>
-                        <p className="mt-2 text-sm ">Sant'Agata Bolognese, Italy</p>
+                        <p className="mt-2 font-bold text-base ">GoriberGari-khl</p>
+                        <p className="mt-2 text-xs ">Khulna, Bangladesh</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">

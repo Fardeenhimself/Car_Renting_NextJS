@@ -5,8 +5,8 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <>
-      <section className="relative h-screen flex flex-col text-left text-white py-0 px-3">
-        <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden hidden sm:block">
+      <section className="relative h-screen flex flex-col text-left  py-0 px-3">
+        <div className="video-docker absolute top-0 left-0 w-full h-screen overflow-hidden hidden sm:block">
           <video
             src={"/bgvideo.mp4"}
             type="video/mp4"
@@ -17,28 +17,22 @@ const Hero = () => {
           />
         </div>
 
-        <div className="video-content space-y-2 ml-16 mt-60 max-[600px]:mt-96 hidden sm:block">
+        <div className="video-content space-y-2 ml-16 mt-60 max-[600px]:mt-96 block">
           <TypeAnimation
-            sequence={["EXPERIENCE THE NEW", 1000]}
+            sequence={['EXPERIENCE THE NEW', 1000]}
             wrapper="p"
             cursor={false}
             repeat={1}
-            className="text-5xl max-[600px]:text-3xl font-bold "
+            className="text-5xl max-[600px]:text-3xl font-bold text-black sm:text-white "
           />
           <TypeAnimation
-            sequence={["    AVENTADOR S", 3000]}
+            sequence={['    AVENTADOR S', 3000]}
             wrapper="p"
             cursor={false}
             repeat={1}
-            speed={{ type: "keyStrokeDelayInMs", value: 200 }}
-            className="text-8xl max-[600px]:text-5xl font-bold flex flex-wrap "
+            speed={{ type: 'keyStrokeDelayInMs', value: 200 }}
+            className="text-8xl max-[600px]:text-5xl font-bold flex flex-wrap text-black sm:text-white"
           />
-        </div>
-
-        <div className="sm:hidden flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h1 className="text-xl text-white bg-black p-4 rounded-lg">
-            Welcome to Lamgorghini Renting Service. This section contains Video
-          </h1>
         </div>
       </section>
 
@@ -56,7 +50,7 @@ const Hero = () => {
                   <div className="p-4 transition transform hover:-translate-y-4 motion-reduce:transition-none motion-reduce:hover:transform-none">
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-2xl">
                       <img
-                        className="lg:h-56 md:h-36 w-full object-cover object-center"
+                        className="h-48 md:h-56 lg:h-64 w-full object-cover object-center"
                         src={data?.image}
                         alt="blog"
                       />
