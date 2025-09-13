@@ -1,9 +1,6 @@
 # Car Renting Website Using Next.js
 A university project made with Next.js and Tailwind CSS. Car renting store that has different car categories to choose from and rent. All images, videos, logo's are property of Automobili Lamborghini group. I do not own them. Used them for education purpose only. 
 
-## Demo
-https://goribergari-khl.netlify.app/
-
 ## Features
 
 - 3 Categories of Car (Sedan, Sports, SUV).
